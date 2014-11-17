@@ -1,4 +1,6 @@
 SampleApp2::Application.routes.draw do
+  get "some_other_random_thing/bellboys"
+
   get "some_other_random_thing/porpoises"
 
   get "some_other_random_thing/platypusses"
@@ -8,6 +10,8 @@ SampleApp2::Application.routes.draw do
   get "static_pages/home"
 
   get "static_pages/help"
+
+  get "static_pages/about"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

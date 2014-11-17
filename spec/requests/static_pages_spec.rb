@@ -20,7 +20,7 @@ describe "Static Pages" do
   	end
     it "should ahve the right title" do
     	visit '/static_pages/about'
-    	page.should have_selector('title', :text => "ROR tut | About")
+    	page.should have_selector('title', :text => "ROR tut")
     end
   end
 end

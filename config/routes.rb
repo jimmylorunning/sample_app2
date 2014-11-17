@@ -1,4 +1,10 @@
 SampleApp2::Application.routes.draw do
+  get "some_other_random_thing/porpoises"
+
+  get "some_other_random_thing/platypusses"
+
+  get "some_other_random_thing/ladles"
+
   get "static_pages/home"
 
   get "static_pages/help"

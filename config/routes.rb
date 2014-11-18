@@ -1,4 +1,9 @@
 SampleApp2::Application.routes.draw do
+
+  get "users/new"
+
+  get "users/index"
+
   get "some_other_random_thing/bellboys"
 
   get "some_other_random_thing/porpoises"
@@ -7,11 +12,14 @@ SampleApp2::Application.routes.draw do
 
   get "some_other_random_thing/ladles"
 
-  get "static_pages/home"
+  root to: 'static_pages#home'
+#  get "static_pages/help"
+  get 'help' => 'static_pages#help'
+#  get "static_pages/about"
+  get 'about' => 'static_pages#about'
+  get 'signup' => 'users#new'
+  get 'users' => 'users#index'
 
-  get "static_pages/help"
-
-  get "static_pages/about"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

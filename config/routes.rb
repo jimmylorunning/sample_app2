@@ -1,9 +1,5 @@
 SampleApp2::Application.routes.draw do
 
-  get "users/new"
-
-  get "users/index"
-
   get "some_other_random_thing/bellboys"
 
   get "some_other_random_thing/porpoises"
@@ -18,8 +14,8 @@ SampleApp2::Application.routes.draw do
 #  get "static_pages/about"
   get 'about' => 'static_pages#about'
   get 'signup' => 'users#new'
-  get 'users' => 'users#index'
-
+#  get 'users' => 'users#index'
+  resources :users
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
